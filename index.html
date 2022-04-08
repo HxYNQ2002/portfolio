@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="toggle" onclick="toggleMenu()"></div>
+
+    <section class="banner" id="home">
+        <div class="imgSidebar">
+            <img src="img/bg.jpg" alt="coding image">
+        </div>
+        <div class="contentBx">
+            <h5 class="logoText">My Portfolio</h5>
+            <div>
+                <h4><span>Hello</span>, I'm</h4>
+                <h2>Nguyễn Quốc Huy</h2>
+                <h4>I'm a Front End Web Developer</h4>
+                <p>Since I'm taking Web Design course and I'm still on progress of making complete sketch. Here is what I've done so far. Hopefully, you gonna love it!</p>
+                <a href="#" class="btn">About Me</a>
+            </div>
+            <ul class="sci">
+                <li><a href="#"><img src="img/facebook.png" alt="facebook image"></a></li>
+                <li><a href="#"><img src="img/twitter.png" alt="twitter image"></a></li>
+                <li><a href="#"><img src="img/instagram.png" alt="instagram image"></a></li>
+            </ul>
+        </div>        
+    </section>
+
+    <section class="about" id="about">
+        <div class="title">
+            <h2>About Us</h2>
+            <p></p>                
+        </div>
+    </section>
+
+    <div class="sidebar">
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.toggle');
+            const sidebar = document.querySelector('.sidebar');
+            menuToggle.classList.toggle('active');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
